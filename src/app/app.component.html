@@ -1,15 +1,7 @@
-<md-sidenav-container fullscreen="">
-  <md-sidenav #sidenav mode="side">
-    <!-- sidenav content -->
-    <md-list>
-      <md-list-item><button md-raised-button color="primary">Dashboard</button></md-list-item>
-      <md-list-item><button md-raised-button color="primary">Heroes</button></md-list-item>
-    </md-list>
-  </md-sidenav>
+<md-toolbar color="primary">
+  <span>Tour of Heroes</span>
+  <a md-button="" routerLink="/">Dashboard</a>
+  <a md-button="" routerLink="/heroes">Heroes</a>
+</md-toolbar>
 
-  <div class="app-sidenav-content">
-    <button md-raised-button (click)="sidenav.toggle()">Raised button</button>
-  </div>
-
-  <!-- primary content -->
-</md-sidenav-container>
+<router-outlet></router-outlet>

@@ -6,3 +6,5 @@ services:
     image: mongo
     ports:
       - "27017:27017"
+    volumes:
+      - ./heroes.json:/data/heroes.json:ro
